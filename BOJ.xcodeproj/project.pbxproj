@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18911DB62AAEF5600098F9C2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18911DB52AAEF5600098F9C2 /* main.cpp */; };
-		18911DBE2AAEF67D0098F9C2 /* 29737.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18911DBD2AAEF67D0098F9C2 /* 29737.cpp */; };
+		18911DC32AAF02AC0098F9C2 /* 23736.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18911DC12AAF01810098F9C2 /* 23736.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +26,7 @@
 		18911DB22AAEF5600098F9C2 /* BOJ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BOJ; sourceTree = BUILT_PRODUCTS_DIR; };
 		18911DB52AAEF5600098F9C2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		18911DBD2AAEF67D0098F9C2 /* 29737.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 29737.cpp; sourceTree = "<group>"; };
+		18911DC12AAF01810098F9C2 /* 23736.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 23736.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				18911DBD2AAEF67D0098F9C2 /* 29737.cpp */,
+				18911DC12AAF01810098F9C2 /* 23736.cpp */,
 			);
 			path = "20000++";
 			sourceTree = "<group>";
@@ -130,8 +131,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18911DBE2AAEF67D0098F9C2 /* 29737.cpp in Sources */,
-				18911DB62AAEF5600098F9C2 /* main.cpp in Sources */,
+				18911DC32AAF02AC0098F9C2 /* 23736.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +253,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5Y5VTS9TNQ;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_NO_COMMON_BLOCKS = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -263,6 +265,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5Y5VTS9TNQ;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_NO_COMMON_BLOCKS = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
