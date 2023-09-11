@@ -1,5 +1,5 @@
 //
-//  main.cpp
+//  29737.cpp
 //  BOJ
 //
 //  Created by 한재혁 on 2023/09/11.
