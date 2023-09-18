@@ -16,7 +16,7 @@ struct Node {
 static int N, M, K;
 static int board[1001][1001];
 static int visited[1001][1001][11];
-static int dx[4] = { - 1, 1, 0, 0 };
+static int dx[4] = { -1, 1, 0, 0 };
 static int dy[4] = { 0, 0, -1, 1 };
 
 void BFS();
@@ -31,7 +31,7 @@ int main() {
         string s;
         cin >> s;
         for (int j = 0; j < M; j++) {
-            if (s[i] == '0') {
+            if (s[j] == '0') {
                 board[i][j] = 0;
             }
             else {
@@ -40,19 +40,10 @@ int main() {
         }
     }
     
-    fill(&visited[0][0][0], &visited[1000][1001][11], 0);
+    fill(&visited[0][0][0], &visited[1000][1000][11], 0);
+    
     BFS();
-    
-    int result = (int)1e9;
-    
-    for (int i = 0; i < K; i++) {
-        if (visited[N - 1][M - 1][i] != 0) {
-            result = min(result, visited[N - 1][M - 1][i]);
-        }
-    }
-    
-    cout << (result == 1e9 ? -1 : result) << "\n";
-    
+
     return 0;
 }
 
@@ -67,6 +58,11 @@ void BFS() {
         int c = myqueue.front().count;
         myqueue.pop();
         
+        if (x == N - 1 && y == M - 1) {
+            cout << visited[x][y][c] << "\n";
+            return;
+        }
+        
         for (int i = 0; i < 4; i++) {
             int nx = x + dx[i];
             int ny = y + dy[i];
@@ -79,24 +75,20 @@ void BFS() {
                 continue;
             }
             
-            if (c < K) {
-                if (board[nx][ny] == 1) {
-                    visited[nx][ny][c + 1] = visited[x][y][c] + 1;
-                    myqueue.push({ nx, ny, c + 1 });
-                }
-                
-                else {
-                    visited[nx][ny][c] = visited[x][y][c] + 1;
-                    myqueue.push({ nx, ny, c });
-                }
+            if (board[nx][ny] == 0) {
+                visited[nx][ny][c] = visited[x][y][c] + 1;
+                myqueue.push({ nx, ny, c });
             }
             
-            else if (c == K) {
-                if (board[nx][ny] == 0) {
-                    visited[nx][ny][c] = visited[x][y][c] + 1;
-                    myqueue.push({ nx, ny, c });
+            else {
+                if (c < K && !visited[nx][ny][c + 1]) {
+                    visited[nx][ny][c + 1] = visited[x][y][c] + 1;
+                    myqueue.push({ nx, ny, c + 1 });
                 }
             }
         }
     }
+    
+    cout << -1 << "\n";
+    return;
 }
