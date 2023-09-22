@@ -9,13 +9,11 @@
 
 using namespace std;
 
-static int N, result = (int)1e9;
-static int length_sum = 0;
-static string A[10];
-static bool visited[10];
+static int N;
+static vector<string> A;
 
-int check(string a, string b);
-void DFS(int idx, int depth, int tmp);
+int Check(const string &a, const string &b);
+int Solve(vector<string> &A, int count, string tmp);
 
 int main() {
     ios_base::sync_with_stdio(false);
@@ -24,37 +22,22 @@ int main() {
     cin >> N;
     
     for (int i = 0; i < N; i++) {
-        cin >> A[i];
-        length_sum += (int)A[i].size();
+        string x;
+        cin >> x;
+        A.push_back(x);
     }
     
-//    for (int i = 0; i < N; i++) {
-//        fill(visited, visited + 10, false);
-//        visited[i] = true;
-//        DFS(i, 1, 0);
-//    }
-    fill(visited, visited + 10, false);
-    DFS(0, 1, 0);
-    
-    cout << result << "\n";
+    cout << Solve(A, 0, "") << "\n";
     
     return 0;
 }
 
-int check(string a, string b) {
+int Check(const string &a, const string &b) {
     int a_sz = (int)a.size();
     int b_sz = (int)b.size();
     
     for (int k = min(a_sz, b_sz); k >= 1; k--) {
-        bool flag = false;
-        for (int i = 0; i < k; i++) {
-            if (a[a_sz - k + i] != b[i]) {
-                flag = true;
-                break;
-            }
-        }
-        
-        if (!flag) {
+        if (equal(a.end() - k, a.end(), b.begin())) {
             return k;
         }
     }
@@ -62,20 +45,19 @@ int check(string a, string b) {
     return 0;
 }
 
-void DFS(int idx, int depth, int tmp) {
-    if (depth == N) {
-        result = min(result, length_sum - tmp);
-        return;
+int Solve(vector<string> &A, int count, string tmp) {
+    if (count == N) {
+        return (int)tmp.length();
     }
     
-    for (int i = idx + 1; i < N; i++) {
-        if (!visited[i]) {
-            int s = check(A[idx], A[i]);
-            if (s != 0) {
-                visited[i] = true;
-                DFS(i, depth + 1, tmp + s);
-                visited[i] = false;
-            }
-        }
+    int Min = (int)1e9;
+    
+    for (int i = count; i < N; i++) {
+        int K = Check(tmp, A[i]);
+        swap(A[count], A[i]);
+        Min = min(Min, Solve(A, count + 1, tmp + A[count].substr(K)));
+        swap(A[count], A[i]);
     }
+    
+    return Min;
 }
