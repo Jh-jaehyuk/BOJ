@@ -1,5 +1,5 @@
 //
-//  1313.cpp
+//  1313_hardcode.cpp
 //  BOJ
 //
 //  Created by J213h on 2023/10/04.
@@ -9,21 +9,21 @@
 
 using namespace std;
 
-static int prime[1000001];
+static int prime[10000001];
 bool isPrime(int x);
 bool Check(string s);
 
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(0);
-    
-    for (int i = 2; i <= 1000000; i++) {
+
+    for (int i = 2; i <= 10000000; i++) {
         if (isPrime(i)) {
             prime[i] = 1;
         }
     }
     
-    for (int i = 100; i <= 1000000; i++) {
+    for (int i = 100; i <= 10000000; i++) {
         if (!prime[i] && Check(to_string(i))) {
             cout << i << "\n";
         }
