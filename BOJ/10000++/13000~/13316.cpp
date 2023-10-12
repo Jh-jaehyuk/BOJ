@@ -5,6 +5,14 @@
 //  Created by J213h on 2023/09/15.
 //
 
+// Answer :
+// 5
+// 1 2
+// 3 4
+// 4 1
+// 0 0
+// 5 2
+
 #include<stdio.h>
 #include<algorithm>
 #include<vector>
@@ -38,3 +46,5 @@ int main()
     assert(ch);
     return 0;
 }
+
+
