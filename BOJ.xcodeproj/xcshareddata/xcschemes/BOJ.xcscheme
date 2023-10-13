@@ -35,7 +35,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      customWorkingDirectory = "/Users/j213h/Documents/Algorithm/BOJ/BOJ/00000++/4000~"
+      customWorkingDirectory = "/Users/j213h/Documents/Algorithm/BOJ/BOJ/00000++/5000~"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
