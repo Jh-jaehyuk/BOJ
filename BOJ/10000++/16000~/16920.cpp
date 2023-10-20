@@ -10,7 +10,6 @@
 using namespace std;
 
 static int N, M, P;
-static bool flag;
 static char board[1001][1001];
 static int dx[4] = { -1, 1, 0, 0 };
 static int dy[4] = { 0, 0, -1, 1 };
@@ -45,17 +44,27 @@ int main() {
     }
     
     while (true) {
-        flag = false;
-        
         for (int i = 1; i <= P; i++) {
+            if (V[i].empty()) {
+                continue;
+            }
             BFS(V[i]);
         }
         
-        if (!flag) {
+        int count = 0;
+        for (int i = 1; i <= P; i++) {
+            if (!V[i].empty()) {
+                count++;
+                break;
+            }
+        }
+        
+        if (count == 0) {
             break;
         }
     }
     
+    fill(result, result + 10, 0);
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < M; j++) {
             if (board[i][j] == '.' || board[i][j] == '#') {
@@ -78,6 +87,10 @@ void BFS(queue<pair<int, int>>& Q) {
     for (int j = 0; j < S[now]; j++) {
         int qs = (int)Q.size();
         
+        if (qs == 0) {
+            return;
+        }
+        
         for (int i = 0; i < qs; i++) {
             int x = Q.front().first;
             int y = Q.front().second;
@@ -96,7 +109,6 @@ void BFS(queue<pair<int, int>>& Q) {
                 }
                 
                 board[nx][ny] = board[x][y];
-                flag = true;
                 Q.push(make_pair(nx, ny));
             }
         }
