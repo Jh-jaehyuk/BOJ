@@ -1,26 +1,32 @@
 import sys
-from itertools import combinations
+from collections import defaultdict
 
-n, K = map(int, sys.stdin.readline().rstrip().split())
-arr = [sys.stdin.readline().rstrip() for _ in range(n)]
+n, K = map(int, sys.stdin.readline().split())
+d = defaultdict(int)
 
 
-def Count(bit):
+def count_bit(bit):
     if bit == 0:
         return 0
-    return bit % 2 + Count(bit // 2)
+    return bit % 2 + count_bit(bit // 2)
 
 
-result = 0
-combi = list(combinations(arr, 2))
-for c in combi:
-    bit = 1 << 10
-    x = ''.join(c)
+for _ in range(n):
+    bit = 0
+    x = sys.stdin.readline().rstrip()
 
-    for i in range(20):
+    for i in range(10):
         bit |= (1 << int(x[i]))
 
-    if Count(bit) == K + 1:
-        result += 1
+    d[bit] += 1
+
+result = 0
+for i in d:
+    for j in d:
+        if i <= j and count_bit(i | j) == K:
+            if i == j:
+                result += (d[i] * (d[i] - 1)) // 2
+            else:
+                result += d[i] * d[j]
 
 print(result)
