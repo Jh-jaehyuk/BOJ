@@ -5,8 +5,7 @@ A = list(map(int, sys.stdin.readline().split()))
 B = list(map(int, sys.stdin.readline().split()))
 
 B.sort()
-print("A")
-print()
+
 arr = set()
 for i in range(N):
     for j in range(N):
