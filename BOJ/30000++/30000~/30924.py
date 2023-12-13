@@ -1,26 +1,21 @@
 import random
 
-check = set()
+numlist = list(i for i in range(1, 10001))
+random.shuffle(numlist)
 A, B = 0, 0
 
-for i in range(19997):
-    x = random.randint(1, 10001)
-
-    while x in check:
-        x = random.randint(1, 10001)
-    check.add(x)
-
-    if not A:
-        print("? A", x, flush=True)
-    else:
-        print("? B", x, flush=True)
+for x in numlist:
+    print('? A', x)
     res = int(input())
-
     if res:
-        if not A:
-            A = x
-            check.clear()
-        else:
-            B = x
-            print("!", A + B, flush=True)
-            exit(0)
+        A = x
+        break
+
+for x in numlist:
+    print('? B', x)
+    res = int(input())
+    if res:
+        B = x
+        break
+
+print('!', A + B)
