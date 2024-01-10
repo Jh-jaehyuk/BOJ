@@ -1,8 +1,8 @@
 //
-//  main.cpp
+//  31066.cpp
 //  BOJ
 //
-//  Created by 한재혁 on 2023/09/11.
+//  Created by J213h on 1/10/24.
 //
 
 #include <bits/stdc++.h>
