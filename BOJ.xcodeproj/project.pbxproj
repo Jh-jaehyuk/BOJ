@@ -72,6 +72,7 @@
 		186F15DB2ACD4B9900C21F03 /* 15685.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 15685.cpp; sourceTree = "<group>"; };
 		186F15DD2ACD5E4500C21F03 /* 17140.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 17140.cpp; sourceTree = "<group>"; };
 		186F15DF2ACD6DD000C21F03 /* 17141.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 17141.cpp; sourceTree = "<group>"; };
+		187697482B61132B00921D81 /* 26007.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 26007.cpp; sourceTree = "<group>"; };
 		1877D1262B3FFA9B0047DB5F /* 31000-2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "31000-2.cpp"; sourceTree = "<group>"; };
 		1877D1292B3FFEA30047DB5F /* Softeer_금고털이.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Softeer_금고털이.cpp"; sourceTree = "<group>"; };
 		1877D12C2B4012BE0047DB5F /* Softeer_우물안개구리.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Softeer_우물안개구리.cpp"; sourceTree = "<group>"; };
@@ -317,6 +318,14 @@
 			path = "14000~";
 			sourceTree = "<group>";
 		};
+		187697472B61131E00921D81 /* 26000~ */ = {
+			isa = PBXGroup;
+			children = (
+				187697482B61132B00921D81 /* 26007.cpp */,
+			);
+			path = "26000~";
+			sourceTree = "<group>";
+		};
 		18911DA92AAEF5600098F9C2 = {
 			isa = PBXGroup;
 			children = (
@@ -350,6 +359,7 @@
 		18911DBC2AAEF6450098F9C2 /* 20000++ */ = {
 			isa = PBXGroup;
 			children = (
+				187697472B61131E00921D81 /* 26000~ */,
 				183645CF2AB0769C00AEE9B5 /* 20000~ */,
 				183645CE2AB0763A00AEE9B5 /* 23000~ */,
 				183645AE2AB0477000AEE9B5 /* 29000~ */,

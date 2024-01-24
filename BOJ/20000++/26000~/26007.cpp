@@ -1,11 +1,10 @@
 //
-//  main.cpp
+//  26007.cpp
 //  BOJ
 //
-//  Created by 한재혁 on 2023/09/11.
+//  Created by J213h on 1/24/24.
 //
 
-    
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -37,3 +36,4 @@ int main() {
     
     return 0;
 }
+
