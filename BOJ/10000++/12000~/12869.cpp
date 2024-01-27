@@ -2,7 +2,7 @@
 //  12869.cpp
 //  BOJ
 //
-//  Created by 한재혁 on 2024/01/27.
+//  Created by J213h on 1/27/24.
 //
 
 #include <bits/stdc++.h>
@@ -66,3 +66,4 @@ int main() {
 
     return 0;
 }
+
