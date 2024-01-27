@@ -1,8 +1,8 @@
 //
-//  main.cpp
+//  12869.cpp
 //  BOJ
 //
-//  Created by 한재혁 on 2023/09/11.
+//  Created by 한재혁 on 2024/01/27.
 //
 
 #include <bits/stdc++.h>
