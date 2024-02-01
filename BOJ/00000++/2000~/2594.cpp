@@ -1,11 +1,10 @@
 //
-//  main.cpp
+//  2594.cpp
 //  BOJ
 //
-//  Created by 한재혁 on 2023/09/11.
+//  Created by J213h on 2/1/24.
 //
 
-    
 #include <bits/stdc++.h>
 
 using namespace std;
