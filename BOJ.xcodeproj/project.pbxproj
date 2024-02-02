@@ -66,6 +66,8 @@
 		1861355C2B4E95560096A28C /* 31001.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 31001.cpp; sourceTree = "<group>"; };
 		1861D8E32AC026A700E05153 /* 30016.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 30016.cpp; sourceTree = "<group>"; };
 		1861D8E52AC0387F00E05153 /* 30013.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 30013.cpp; sourceTree = "<group>"; };
+		18622B402B6CC74700BD8172 /* 19598.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 19598.cpp; sourceTree = "<group>"; };
+		18622B422B6CD1E500BD8172 /* 1765.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1765.cpp; sourceTree = "<group>"; };
 		1866E5052AE64C9E0021BD94 /* 9250.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 9250.cpp; sourceTree = "<group>"; };
 		1867145E2B5130FE00A2A533 /* 30973.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 30973.cpp; sourceTree = "<group>"; };
 		186F15D12ACD372400C21F03 /* 1157.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1157.cpp; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 				18FA8F5B2ADD241500C94505 /* 1786.cpp */,
 				185F00F82ADE89C30078B941 /* 1969.cpp */,
 				18883D542B5A6D6B005203B9 /* 1584.cpp */,
+				18622B422B6CD1E500BD8172 /* 1765.cpp */,
 			);
 			path = "1000~";
 			sourceTree = "<group>";
@@ -384,7 +387,6 @@
 		18911DCA2AAF26D90098F9C2 /* 10000++ */ = {
 			isa = PBXGroup;
 			children = (
-				18E980732B6518C7009A0E49 /* 19000~ */,
 				1895C6E82AB2F40300CB1DAD /* 10000~ */,
 				1895C6F42AB44AF200CB1DAD /* 11000~ */,
 				1807E8C42B650F3D001285A7 /* 12000~ */,
@@ -394,6 +396,7 @@
 				18FC984A2AB99F41009D2AFB /* 16000~ */,
 				183645D02AB076EA00AEE9B5 /* 17000~ */,
 				18AF305F2ABC3715004B8A21 /* 18000~ */,
+				18E980732B6518C7009A0E49 /* 19000~ */,
 			);
 			path = "10000++";
 			sourceTree = "<group>";
@@ -504,6 +507,7 @@
 			isa = PBXGroup;
 			children = (
 				18E980742B651905009A0E49 /* 19638.cpp */,
+				18622B402B6CC74700BD8172 /* 19598.cpp */,
 			);
 			path = "19000~";
 			sourceTree = "<group>";
