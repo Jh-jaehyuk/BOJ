@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1877D12B2B4002900047DB5F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18911DB52AAEF5600098F9C2 /* main.cpp */; };
+		18632DD92BCFC53400304784 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18911DB52AAEF5600098F9C2 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +25,9 @@
 /* Begin PBXFileReference section */
 		1807E8C52B650F53001285A7 /* 12869.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 12869.cpp; sourceTree = "<group>"; };
 		1807E8C72B65156B001285A7 /* 11441.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 11441.cpp; sourceTree = "<group>"; };
+		18081D7A2BBE60DD00A85D48 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		18081D7C2BBE8AFA00A85D48 /* FastIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastIO.swift; sourceTree = "<group>"; };
+		18081D7E2BBE8B9700A85D48 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		183645AC2AB0381B00AEE9B5 /* 20437.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 20437.cpp; sourceTree = "<group>"; };
 		183645B12AB0482B00AEE9B5 /* 1245.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1245.cpp; sourceTree = "<group>"; };
 		183645C72AB05B2D00AEE9B5 /* 5557.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 5557.cpp; sourceTree = "<group>"; };
@@ -46,6 +49,7 @@
 		185077082AD800C200B8A97E /* 18223.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 18223.cpp; sourceTree = "<group>"; };
 		1850770A2AD8051400B8A97E /* 4485.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 4485.cpp; sourceTree = "<group>"; };
 		1850B26C2B725F6F00D224B5 /* 30827.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 30827.cpp; sourceTree = "<group>"; };
+		1850C56E2BA051EE004189BE /* Softeer_나무 섭지.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Softeer_나무 섭지.cpp"; sourceTree = "<group>"; };
 		18510C892AB82E4200162E29 /* 7045.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 7045.cpp; sourceTree = "<group>"; };
 		18510C8F2AB8469300162E29 /* 30028.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 30028.cpp; sourceTree = "<group>"; };
 		18510C922AB85FC800162E29 /* 30026.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 30026.cpp; sourceTree = "<group>"; };
@@ -74,6 +78,10 @@
 		18622B402B6CC74700BD8172 /* 19598.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 19598.cpp; sourceTree = "<group>"; };
 		18622B422B6CD1E500BD8172 /* 1765.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1765.cpp; sourceTree = "<group>"; };
 		18622B442B6D00F400BD8172 /* 23349.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 23349.cpp; sourceTree = "<group>"; };
+		18632DD12BCFAEB900304784 /* 15591.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 15591.cpp; sourceTree = "<group>"; };
+		18632DD32BCFB86800304784 /* 17025.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 17025.cpp; sourceTree = "<group>"; };
+		18632DD72BCFC34C00304784 /* 5558.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 5558.cpp; sourceTree = "<group>"; };
+		18632DDA2BCFD6F900304784 /* 2174.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2174.cpp; sourceTree = "<group>"; };
 		1866E5052AE64C9E0021BD94 /* 9250.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 9250.cpp; sourceTree = "<group>"; };
 		1867145E2B5130FE00A2A533 /* 30973.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 30973.cpp; sourceTree = "<group>"; };
 		186F15D12ACD372400C21F03 /* 1157.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1157.cpp; sourceTree = "<group>"; };
@@ -142,6 +150,7 @@
 		18DF334D2ABEC58E001DE694 /* 1941.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1941.cpp; sourceTree = "<group>"; };
 		18DF334F2ABED699001DE694 /* 1019.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1019.cpp; sourceTree = "<group>"; };
 		18E1CF8F2B4D63DE00DCD7F7 /* 31216.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 31216.cpp; sourceTree = "<group>"; };
+		18E959A92BCB8CE1004EE38F /* 5052.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 5052.cpp; sourceTree = "<group>"; };
 		18E980742B651905009A0E49 /* 19638.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 19638.cpp; sourceTree = "<group>"; };
 		18E980772B65209A009A0E49 /* 24912.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 24912.cpp; sourceTree = "<group>"; };
 		18ECFA7C2B80C62000643D27 /* 1711.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1711.cpp; sourceTree = "<group>"; };
@@ -242,6 +251,8 @@
 				18FD2C1A2AD943A500A593BC /* 5567.cpp */,
 				18FD2C1E2AD949E600A593BC /* 5214.cpp */,
 				18D5A4322AE10D6C001374B6 /* 5615.cpp */,
+				18E959A92BCB8CE1004EE38F /* 5052.cpp */,
+				18632DD72BCFC34C00304784 /* 5558.cpp */,
 			);
 			path = "5000~";
 			sourceTree = "<group>";
@@ -285,6 +296,7 @@
 				186F15DF2ACD6DD000C21F03 /* 17141.cpp */,
 				1855A1412ACE97E00098A5E0 /* 17142.cpp */,
 				18883D522B5A639E005203B9 /* 17178.cpp */,
+				18632DD32BCFB86800304784 /* 17025.cpp */,
 			);
 			path = "17000~";
 			sourceTree = "<group>";
@@ -397,6 +409,10 @@
 				18911DB52AAEF5600098F9C2 /* main.cpp */,
 				1877D1292B3FFEA30047DB5F /* Softeer_금고털이.cpp */,
 				1877D12C2B4012BE0047DB5F /* Softeer_우물안개구리.cpp */,
+				1850C56E2BA051EE004189BE /* Softeer_나무 섭지.cpp */,
+				18081D7A2BBE60DD00A85D48 /* main.swift */,
+				18081D7C2BBE8AFA00A85D48 /* FastIO.swift */,
+				18081D7E2BBE8B9700A85D48 /* Queue.swift */,
 			);
 			path = BOJ;
 			sourceTree = "<group>";
@@ -464,6 +480,7 @@
 				18D5A4342AE11E2A001374B6 /* 2048.cpp */,
 				185E118D2B5FD0BD008B1441 /* 2138.cpp */,
 				18A9C6372B6BDB730013E800 /* 2594.cpp */,
+				18632DDA2BCFD6F900304784 /* 2174.cpp */,
 			);
 			path = "2000~";
 			sourceTree = "<group>";
@@ -488,6 +505,7 @@
 				18B2DB482ABEE3D20004E989 /* 15898.cpp */,
 				186F15DB2ACD4B9900C21F03 /* 15685.cpp */,
 				185F00FE2ADE985B0078B941 /* 15312.cpp */,
+				18632DD12BCFAEB900304784 /* 15591.cpp */,
 			);
 			path = "15000~";
 			sourceTree = "<group>";
@@ -625,6 +643,7 @@
 				TargetAttributes = {
 					18911DB12AAEF5600098F9C2 = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1530;
 					};
 				};
 			};
@@ -651,7 +670,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1877D12B2B4002900047DB5F /* main.cpp in Sources */,
+				18632DD92BCFC53400304784 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -770,24 +789,29 @@
 		18911DBA2AAEF5600098F9C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5Y5VTS9TNQ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_TESTABILITY = NO;
 				GCC_NO_COMMON_BLOCKS = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		18911DBB2AAEF5600098F9C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5Y5VTS9TNQ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_TESTABILITY = NO;
 				GCC_NO_COMMON_BLOCKS = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
