@@ -69,28 +69,19 @@ final class FileIO {
 
 // let fIO = FileIO()
 
-func Check(ar: [Int]) -> Bool {
-    for i in 0 ..< N {
-        if ar[i] > 0 {
-            return false
-        }
-    }
-    return true
-}
-
 let N = Int(readLine()!)!
-var ar = readLine()!.split(separator: " ").map{Int($0)!}
-var result = [Int](repeating: 0, count: N)
-var t = 1
-
-while !Check(ar: ar) {
-    for i in 0 ..< N {
-        if ar[i] > 0 {
-            ar[i] -= 1
-            result[i] = t
-            t += 1
-        }
+var x = Int(readLine()!)!
+var ar = [Int]()
+for _ in 0 ..< N - 1 {
+    ar.append(Int(readLine()!)!)
+}
+var result = 0
+for i in 0 ..< N - 1 {
+    while ar[i] >= x {
+        ar[i] -= 1
+        x += 1
+        result += 1
+        print(ar[i], x)
     }
 }
-
-print(result.map{String($0)}.joined(separator: " "))
+print(result)
