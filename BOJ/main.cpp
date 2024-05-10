@@ -1,56 +1,35 @@
-//
-//  main.cpp
-//  BOJ
-//
-//  Created by 한재혁 on 2023/09/11.
-//
-
-    
 #include <bits/stdc++.h>
 
 using namespace std;
 
-const int INF = 1e9;
-vector<array<int, 3>> V;
-int dp[10001];
+int dp[1000001][2];
 
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(0);
     
-    int N, D;
-    cin >> N >> D;
+    int a, b;
+    cin >> a >> b;
     
-    V.resize(N);
-    for (int i = 0; i <= D; i++) {
-        dp[i] = INF;
-    }
-
-    for (int i = 0; i < N; i++) {
-        cin >> V[i][0] >> V[i][1] >> V[i][2];
-    }
+    fill_n(&dp[0][0], (b + 1) * 2, 1e9);
+    dp[a][0] = 0;
     
-    sort(V.begin(), V.end());
-    
-    for (int i = 0; i <= D; i++) {
-        if (i == 0) {
-            dp[i] = 0;
-        }
-        else {
-            dp[i] = min(dp[i], dp[i - 1] + 1);
-        }
-        for (int j = 0; j < N; j++) {
-            int u, v, c;
-            u = V[j][0];
-            v = V[j][1];
-            c = V[j][2];
+    for (int i = a; i < b; i++) {
+        for (int j = 0; j < 2; j++) {
+            if (i + 1 <= b) {
+                dp[i + 1][j] = min(dp[i + 1][j] , dp[i][j] + 1);
+            }
             
-            if (u == i && v <= D) {
-                dp[v] = min(dp[v], dp[i] + c);
+            if (i * 2 <= b) {
+                dp[i * 2][j] = min(dp[i * 2][j], dp[i][j] + 1);
+            }
+            
+            if (!j && i * 10 <= b) {
+                dp[i * 10][1] = min(dp[i * 10][1], dp[i][0] + 1);
             }
         }
     }
-    
-    cout << dp[D] << "\n";
+    cout << min(dp[b][0], dp[b][1]) << "\n";
+
     return 0;
 }
