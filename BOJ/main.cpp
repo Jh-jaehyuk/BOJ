@@ -2,34 +2,71 @@
 
 using namespace std;
 
-int dp[1000001][2];
+const long long INF = 1e18;
+int N, K, X, Y;
+vector<vector<array<int, 3>>> graph;
+long long dist[200001];
+priority_queue<pair<long long, int>, vector<pair<long long, int>>, greater<pair<long long, int>>> pq;
+
+long long dijkstra(int start) {
+    fill_n(&dist[0], N + 1, INF);
+    pq.push(make_pair(0, start));
+    dist[start] = 0;
+    
+    while (!pq.empty()) {
+        long long d = pq.top().first;
+        int now = pq.top().second;
+        pq.pop();
+        
+        if (dist[now] < d) {
+            continue;
+        }
+        
+        for (auto i: graph[now]) {
+            long long nd = i[2];
+            if (d < K) {
+                if (i[0]) {
+                    nd += K;
+                }
+                else {
+                    nd += d;
+                }
+            }
+            else {
+                nd += d;
+            }
+            int nxt = i[1];
+            
+            if (dist[nxt] > nd) {
+                dist[nxt] = nd;
+                pq.push(make_pair(nd, nxt));
+            }
+        }
+    }
+    
+    return dist[N];
+}
 
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(0);
     
-    int a, b;
-    cin >> a >> b;
-    
-    fill_n(&dp[0][0], (b + 1) * 2, 1e9);
-    dp[a][0] = 0;
-    
-    for (int i = a; i < b; i++) {
-        for (int j = 0; j < 2; j++) {
-            if (i + 1 <= b) {
-                dp[i + 1][j] = min(dp[i + 1][j] , dp[i][j] + 1);
-            }
-            
-            if (i * 2 <= b) {
-                dp[i * 2][j] = min(dp[i * 2][j], dp[i][j] + 1);
-            }
-            
-            if (!j && i * 10 <= b) {
-                dp[i * 10][1] = min(dp[i * 10][1], dp[i][0] + 1);
-            }
-        }
+    cin >> N >> K >> X >> Y;
+    graph.resize(N + 1);
+    for (int i = 0; i < X; i++) {
+        int u, v, d;
+        cin >> u >> v >> d;
+        graph[u].push_back({ 0, v, d });
+        graph[v].push_back({ 0, u, d });
     }
-    cout << min(dp[b][0], dp[b][1]) << "\n";
+    
+    for (int i = 0; i < Y; i++) {
+        int u, v, d;
+        cin >> u >> v >> d;
+        graph[u].push_back({ 1, v, d });
+        graph[v].push_back({ 1, u, d });
+    }
+    cout << dijkstra(1) << "\n";
 
     return 0;
 }
