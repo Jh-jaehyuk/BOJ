@@ -33,6 +33,7 @@
 		18244F2C2C073EA9002BA335 /* 12908.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 12908.cpp; sourceTree = "<group>"; };
 		18244F2D2C080C3E002BA335 /* 3933.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 3933.cpp; sourceTree = "<group>"; };
 		18244F2E2C081A69002BA335 /* 18137.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 18137.cpp; sourceTree = "<group>"; };
+		18244F2F2C0827D0002BA335 /* 9576.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 9576.cpp; sourceTree = "<group>"; };
 		183645AC2AB0381B00AEE9B5 /* 20437.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 20437.cpp; sourceTree = "<group>"; };
 		183645B12AB0482B00AEE9B5 /* 1245.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1245.cpp; sourceTree = "<group>"; };
 		183645C72AB05B2D00AEE9B5 /* 5557.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 5557.cpp; sourceTree = "<group>"; };
@@ -305,6 +306,7 @@
 				1866E5052AE64C9E0021BD94 /* 9250.cpp */,
 				185D40A72B7E200F00743770 /* 9711.cpp */,
 				186F819D2BF73BD20044122B /* 9370.cpp */,
+				18244F2F2C0827D0002BA335 /* 9576.cpp */,
 			);
 			path = "9000~";
 			sourceTree = "<group>";
