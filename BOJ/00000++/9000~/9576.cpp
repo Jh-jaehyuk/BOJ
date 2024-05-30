@@ -31,7 +31,7 @@ int DFS(int x) {
 
 void solve() {
     cin >> N >> M;
-    memset(res, 0, sizeof(vis));
+    memset(res, 0, sizeof(res));
     graph.resize(M + 1);
     
     for (int i = 1; i <= M; i++) {

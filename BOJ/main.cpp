@@ -2,10 +2,10 @@
 
 using namespace std;
 
-int N, M;
+int N, M, K1, K2;
 vector<vector<int>> graph;
-int res[1001];
-int vis[1001];
+int res[301];
+int vis[301];
 
 int DFS(int x) {
     for (int i: graph[x]) {
@@ -24,7 +24,7 @@ int DFS(int x) {
 
 void solve() {
     cin >> N >> M;
-    memset(res, 0, sizeof(vis));
+    memset(res, 0, sizeof(res));
     graph.resize(M + 1);
     
     for (int i = 1; i <= M; i++) {
@@ -50,11 +50,8 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(0);
     
-    int T;
-    cin >> T;
-    for (int t = 0; t < T; t++) {
-        solve();
-    }
+    cin >> N >> M >> K1 >> K2;
+    
 
     return 0;
 }
