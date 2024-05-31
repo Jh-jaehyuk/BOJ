@@ -28,6 +28,7 @@
 		18081D7A2BBE60DD00A85D48 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		18081D7C2BBE8AFA00A85D48 /* FastIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastIO.swift; sourceTree = "<group>"; };
 		18081D7E2BBE8B9700A85D48 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		18184E032C09B3880081A953 /* 2437.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2437.cpp; sourceTree = "<group>"; };
 		181D0B4F2BD63C4D00ACAD1D /* 1105.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1105.cpp; sourceTree = "<group>"; };
 		181D0B502BD6467900ACAD1D /* 1141.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1141.cpp; sourceTree = "<group>"; };
 		18244F2C2C073EA9002BA335 /* 12908.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 12908.cpp; sourceTree = "<group>"; };
@@ -537,6 +538,7 @@
 				188673F62BF348C700ECD7CC /* 2831.cpp */,
 				186F819A2BF6DD2F0044122B /* 2357.cpp */,
 				18C8B3042BFC413500D34460 /* 2629.py */,
+				18184E032C09B3880081A953 /* 2437.cpp */,
 			);
 			path = "2000~";
 			sourceTree = "<group>";
