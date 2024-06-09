@@ -12,17 +12,7 @@ using namespace std;
 string S[1001];
 
 bool cmp(string& i, string& j) {
-    int is = (int)i.size();
-    int js = (int)j.size();
-    int temp = is * js;
-    
-    for (int k = 0; k < temp; k++) {
-        if (i[k % is] != j[k % js]) {
-            return i[k % is] > j[k % js];
-        }
-    }
-    
-    return is < js;
+    return i + j > j + i;
 }
 
 int main() {
