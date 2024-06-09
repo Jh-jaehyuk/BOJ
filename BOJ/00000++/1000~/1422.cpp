@@ -1,3 +1,10 @@
+//
+//  1422.cpp
+//  BOJ
+//
+//  Created by J213h on 6/9/24.
+//
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -45,3 +52,4 @@ int main() {
     
     return 0;
 }
+
