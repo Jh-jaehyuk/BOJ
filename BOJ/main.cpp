@@ -4,8 +4,6 @@ using namespace std;
 
 int board[101][101];
 int vis[101][101];
-int dx[8] = { -1, -1, -1, 0, 0, 1, 1, 1 };
-int dy[8] = { -1, 0, 1, -1, 1, -1, 0, 1 };
 queue<pair<int, int>> q;
 
 int main() {
