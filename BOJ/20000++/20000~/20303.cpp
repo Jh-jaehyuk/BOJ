@@ -1,3 +1,10 @@
+//
+//  20303.cpp
+//  BOJ
+//
+//  Created by J213h on 7/12/24.
+//
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -99,3 +106,4 @@ int main() {
     cout << ans << "\n";
     return 0;
 }
+
