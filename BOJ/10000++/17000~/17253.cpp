@@ -1,3 +1,10 @@
+//
+//  17253.cpp
+//  BOJ
+//
+//  Created by J213h on 7/14/24.
+//
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -22,6 +29,7 @@ int main() {
         N /= 3;
     }
     
+    cout << res << "\n";
     int rs = (int)res.size();
     for (int i = 0; i < rs; i++) {
         if (res[i] - '0' > 1) {
@@ -33,3 +41,4 @@ int main() {
     
     return 0;
 }
+
