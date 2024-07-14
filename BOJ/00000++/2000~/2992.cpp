@@ -1,3 +1,10 @@
+//
+//  2992.cpp
+//  BOJ
+//
+//  Created by J213h on 7/14/24.
+//
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -17,6 +24,7 @@ int main() {
         cnt[sx[i] - '0']++;
     }
     
+    int ans = 1e6;
     int Max = pow(10, ss);
     
     for (int i = X + 1; i < Max; i++) {
@@ -42,3 +50,4 @@ int main() {
     
     return 0;
 }
+

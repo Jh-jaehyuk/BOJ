@@ -179,6 +179,7 @@
 		18C8B3032BFC29D600D34460 /* 31813.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 31813.py; sourceTree = "<group>"; };
 		18C8B3042BFC413500D34460 /* 2629.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 2629.py; sourceTree = "<group>"; };
 		18C8B3052BFC87C500D34460 /* 1450.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = 1450.py; sourceTree = "<group>"; };
+		18D5183E2C437AF700240DEF /* 2992.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2992.cpp; sourceTree = "<group>"; };
 		18D5A4302AE1089B001374B6 /* 4149.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 4149.cpp; sourceTree = "<group>"; };
 		18D5A4322AE10D6C001374B6 /* 5615.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 5615.cpp; sourceTree = "<group>"; };
 		18D5A4342AE11E2A001374B6 /* 2048.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2048.cpp; sourceTree = "<group>"; };
@@ -549,6 +550,7 @@
 				18C8B3042BFC413500D34460 /* 2629.py */,
 				18184E032C09B3880081A953 /* 2437.cpp */,
 				181504062C12BA10001DADCB /* 2212.cpp */,
+				18D5183E2C437AF700240DEF /* 2992.cpp */,
 			);
 			path = "2000~";
 			sourceTree = "<group>";
