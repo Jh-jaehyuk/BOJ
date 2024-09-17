@@ -1,3 +1,10 @@
+//
+//  31997.cpp
+//  BOJ
+//
+//  Created by J213h on 9/17/24.
+//
+
 #include <bits/stdc++.h>
 
 using namespace std;
