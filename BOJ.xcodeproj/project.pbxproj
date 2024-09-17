@@ -120,6 +120,7 @@
 		1877D1292B3FFEA30047DB5F /* Softeer_금고털이.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Softeer_금고털이.cpp"; sourceTree = "<group>"; };
 		1877D12C2B4012BE0047DB5F /* Softeer_우물안개구리.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Softeer_우물안개구리.cpp"; sourceTree = "<group>"; };
 		1877D12E2B4021C90047DB5F /* 30972.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 30972.cpp; sourceTree = "<group>"; };
+		187A06A12C99EBE6004FAC15 /* 17827.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 17827.cpp; sourceTree = "<group>"; };
 		1883E7382C416DAC0071F7E1 /* 20303.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 20303.cpp; sourceTree = "<group>"; };
 		188673F62BF348C700ECD7CC /* 2831.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2831.cpp; sourceTree = "<group>"; };
 		188673F72BF3599300ECD7CC /* 1484.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1484.cpp; sourceTree = "<group>"; };
@@ -355,6 +356,7 @@
 		183645D02AB076EA00AEE9B5 /* 17000~ */ = {
 			isa = PBXGroup;
 			children = (
+				187A06A12C99EBE6004FAC15 /* 17827.cpp */,
 				18911DCB2AAF26E70098F9C2 /* 17071.cpp */,
 				1895C6F22AB31CB500CB1DAD /* 17069.cpp */,
 				186F15DD2ACD5E4500C21F03 /* 17140.cpp */,
