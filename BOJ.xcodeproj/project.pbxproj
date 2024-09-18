@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -222,6 +222,10 @@
 		18FD2C202AD957D000A593BC /* 6497.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 6497.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		18BA02562C9ACD7D00EF7732 /* 32000~ */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "32000~"; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		18911DAF2AAEF5600098F9C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -389,6 +393,7 @@
 		18510C8D2AB8467E00162E29 /* 30000++ */ = {
 			isa = PBXGroup;
 			children = (
+				18BA02562C9ACD7D00EF7732 /* 32000~ */,
 				18510C8E2AB8468600162E29 /* 30000~ */,
 				18EF507F2B3C2333007B9952 /* 31000~ */,
 			);
