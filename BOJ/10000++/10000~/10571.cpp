@@ -1,3 +1,10 @@
+//
+//  10571.cpp
+//  BOJ
+//
+//  Created by J213h on 9/23/24.
+//
+
 #include <bits/stdc++.h>
 
 using namespace std;
