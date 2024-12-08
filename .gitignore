@@ -1,2 +1,5 @@
 # exclude .DS_Store
 .DS_Store
+
+# exclude Programmers folder
+/Programmers

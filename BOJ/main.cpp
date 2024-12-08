@@ -2,35 +2,67 @@
 
 using namespace std;
 
-pair<double, double> A[201];
-int dp[201];
+string S, T;
 
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
     
-    int T;
-    cin >> T;
-    for (int t = 0; t < T; t++) {
-        int N;
-        cin >> N;
-        
-        fill_n(dp, 201, 1);
-        for (int i = 0; i < N; i++) {
-            cin >> A[i].first >> A[i].second;
-        }
-        
-        int ans = 1;
-        for (int i = 1; i < N; i++) {
-            for (int j = 0; j < i; j++) {
-                if (A[i].first > A[j].first && A[i].second < A[j].second) {
-                    dp[i] = max(dp[i], dp[j] + 1);
-                }
-            }
-        }
-        
-        cout << *max_element(dp, dp + N) << "\n";
+    int N;
+    cin >> N;
+    
+    for (int i = 0; i < N; i++) {
+        char c;
+        cin >> c;
+        S += c;
     }
     
-    return 0;
+    int s = 0;
+    int e = N - 1;
+    
+    while (s <= e) {
+        if (S[s] < S[e]) {
+            T += S[s];
+            s++;
+        }
+        else if (S[s] > S[e]) {
+            T += S[e];
+            e--;
+        }
+        else {
+            int ns = s + 1;
+            int ne = e - 1;
+            int flag = 0;
+            while (ns <= ne) {
+                if (S[ns] < S[ne]) {
+                    break;
+                }
+                else if (S[ns] > S[ne]) {
+                    flag = 1;
+                    break;
+                }
+                else {
+                    ns++;
+                    ne--;
+                }
+            }
+            
+            if (!flag) {
+                T += S[s];
+                s++;
+            }
+            else {
+                T += S[e];
+                e--;
+            }
+        }
+    }
+    
+    int cnt = 0;
+    for (auto i: T) {
+        cout << i;
+        if (++cnt % 80 == 0) {
+            cout << "\n";
+        }
+    }
 }
